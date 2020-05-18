@@ -1,0 +1,28 @@
+package main
+
+import (
+	"bytes"
+	"efs.structures/tree"
+	"fmt"
+)
+
+func main() {
+
+	fmt.Println(bytes.Compare([]byte("12"), []byte("11")))
+
+	btree := tree.NewBtree(5)
+	value1 := "12"
+	value2 := "11"
+	value3 := "15"
+	value4 := "14"
+	value5 := "13"
+	value6 := "10"
+
+	btree.Insert([]byte(value1), &value1)
+	btree.Insert([]byte(value2), &value2)
+	btree.Insert([]byte(value3), &value3)
+	btree.Insert([]byte(value4), &value4)
+	btree.Insert([]byte(value5), &value5)
+	btree.Insert([]byte(value6), &value6)
+
+}

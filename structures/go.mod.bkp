@@ -1,0 +1,3 @@
+module efs.structures
+
+go 1.14
